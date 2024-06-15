@@ -1,0 +1,97 @@
+*{
+   margin: 0px; 
+   padding: 0px;
+   box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(bg_img/pexels-sebastiaan9977-1097456.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h2{
+    color: rgb(229, 207, 207);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.form_container{
+    /* background-color: aqua; */
+    padding: 15px;
+    border-radius: 6px;
+    background: blur(10px);
+    border: 1px solid #FF6969;
+    width: 300px;
+    margin: 0 auto;
+    background-color: rgba(108, 29, 29, 0.8);
+    position: relative;
+    overflow: hidden;
+
+}
+.form_container::before{
+        content: '';
+        position: absolute;
+        top: -10px;
+        /* Adjust positioning */
+        left: -10px;
+        /* Adjust positioning */
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        background-image: inherit;
+        filter: blur(1px);
+        /* Adjust the blur intensity as needed */
+        z-index: -1;
+}
+.form_group{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.form_group label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #D6DAC8;
+}
+.form_group input{
+    padding-inline-start: 1px;
+    width: 100%;
+    padding:  8px;
+    font-size: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+p{
+    color: white;
+}
+.submit_btn{
+    /* position: relative; */
+    /* top: 10px; */
+    /* left: 46px; */
+    /* margin-top: 8px; */
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #FF6969;
+    border-radius: 2px;
+    cursor: pointer;
+    border: #FF6969;
+    border-color: #fff;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.submit_btn:hover{
+    background-color: rgb(240, 235, 242);
+    color: black;
+}
+p a{
+    color: lightgreen;
+}
+
